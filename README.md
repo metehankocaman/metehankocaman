@@ -49,4 +49,4 @@ Built to be readable, verifiable, and demonstrably correct on hardware.
 ## Contact
 
 - Email: metehankocaman@outlook.com  
-- LinkedIn: https://www.linkedin.com/in/metehan-kocaman
+- LinkedIn: [https://www.linkedin.com/in/metehan-kocaman](https://www.linkedin.com/in/metehankocaman/)
