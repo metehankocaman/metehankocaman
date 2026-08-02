@@ -1,52 +1,57 @@
-# Metehan Kocaman
+<div align="center">
 
-Electrical Engineering graduate (Carleton University, Ottawa).  
-I build and verify digital + embedded systems — FPGA RTL, hardware-facing software, and comms-focused prototypes — and I’m most in my element when there’s a real signal path, timing constraints, and debugging involved.
+# Hi, I’m Metehan Kocaman
 
----
+**Electrical Engineer | FPGA/RTL · Embedded Systems · Wireless & Signal Processing**
 
-## What I’m focused on
+Ottawa, Ontario, Canada
 
-- **Digital hardware & verification:** SystemVerilog RTL, FSM/datapath design, self-checking testbenches, BRAM-based designs, on-board validation (ILA, waveforms, reproducible sims)
-- **Embedded + instrumentation:** UART/SPI/I2C workflows, test automation (PyVISA/SCPI), lab tool integration, and writing software that drives hardware reliably
-- **Communications interest:** I’m especially drawn to practical comms problems (serial links, timing, noise/robustness, protocol correctness) and want to keep building deeper here
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/metehankocaman/)
+[![Email](https://img.shields.io/badge/Email-Contact-0078D4?style=flat&logo=microsoftoutlook&logoColor=white)](mailto:metehankocaman@outlook.com)
 
-I like projects that force clean thinking: clear interfaces, measurable correctness, and evidence (simulation + hardware capture) instead of vibes.
+</div>
 
----
+## About me
 
-## Highlight projects
+I’m a Carleton University Electrical Engineering graduate who builds and verifies systems where hardware, software, and real signals meet.
 
-### FPGA: Moving Average + BRAM + Verification Environment
-A moving-average core backed by BRAM with a structured SystemVerilog verification setup (driver/monitor/scoreboard).  
-Emphasis on **debugging a faulty baseline**, fixing control/datapath alignment issues, and proving correctness with self-checking tests.
+My work spans FPGA RTL and functional verification, embedded command-and-telemetry systems, wireless link-level simulation, signal processing, and hardware-facing software. I care about measurable correctness: self-checking tests, waveforms, bench captures, structured logs, and reproducible experiments.
 
-### FPGA: UART 8N1 @ 9600 (RX/TX + 16× tick enable)
-UART receiver/transmitter with mid-bit sampling, framing error handling, and a baud tick generator.  
-Validated through simulation, terminal I/O, and ILA capture.
+Previously, I worked as a Research Intern with the Smart Connected Vehicles Innovation Centre and NEXTCON Lab at the University of Ottawa, contributing Python simulation and dataset-generation tooling for NTN and NOMA research.
 
-### FPGA: Fibonacci Generator (Datapath + FSM)
-Controller–datapath architecture with manual/auto modes and a strict stop condition.  
-Built to be readable, verifiable, and demonstrably correct on hardware.
+## Featured projects
 
-### Capstone (WIP to publish): FBG-Based Archery Analyzer
-- FBG sensors + ESP32 acquisition + Python GUI visualization/reporting  
-- Built calibration/peak detection workflows (Python/MATLAB)  
-- Replaced broken commercial optical hardware with a DIY webcam spectrometer approach  
-- Goal: a repeatable measurement pipeline you can actually trust
+| Project | What it demonstrates |
+| --- | --- |
+| **[PicoSat EPS Command/Telemetry Node](https://github.com/metehankocaman/picosat-eps-command-telemetry-node)** | Two-Pico embedded system with Pico SDK C++, half-duplex RS-485, CRC-protected packets, EPS safety states, INA219 power telemetry, OLED diagnostics, Python ground-station tooling, automated tests, and bench-validation logs. |
+| **[LEO/NTN OFDM Link Simulator](https://github.com/metehankocaman/ntn-linksim-leo)** | Reproducible Python link-level simulator covering QPSK-OFDM, BER sweeps, CFO/Doppler, timing offset, CP-based synchronization, Rician fading, YAML scenarios, and deterministic artifacts. |
+| **[FPGA UART 8N1 Transceiver](https://github.com/metehankocaman/fpga-uart-8n1-9600)** | SystemVerilog UART RX/TX with 16× oversampling, NCO-based baud generation, asynchronous-input synchronization, framing-error handling, self-checking simulation, terminal testing, and Vivado ILA captures. |
+| **[FPGA Moving Average and Verification Environment](https://github.com/metehankocaman/fpga-moving-average-verification-bram)** | BRAM-backed RTL with controller/datapath partitioning and a class-based SystemVerilog driver, monitor, and scoreboard used to diagnose and correct timing and valid-signal alignment bugs. |
+| **[Archery Performance Analyzer](https://github.com/metehankocaman/archery-gui-capstone)** | Award-recognized Carleton capstone combining ESP32/IMU acquisition, FBG spectral processing, threaded Python pipelines, shot-phase analysis, data export, and real-time PyQt visualization. |
 
----
+## Technical toolkit
 
-## Tools I use
+- **Digital hardware:** SystemVerilog, FPGA RTL, FSM/datapath design, BRAM, functional verification, Xilinx Vivado, ILA, XDC constraints
+- **Embedded systems:** C/C++, Pico SDK, ESP32, UART, RS-485, SPI, I²C, binary protocols, CRC, state-machine safety logic
+- **Wireless and signal processing:** OFDM, QPSK, BER analysis, CFO/Doppler, timing synchronization, Rician fading, NTN, NOMA
+- **Software and testing:** Python, Linux, pytest, Git, MATLAB, NumPy, SciPy, PyQt5, data visualization
+- **Instrumentation:** PyVISA, SCPI, oscilloscopes, logic analyzers, serial debugging, hardware bring-up
 
-**HDL / FPGA:** SystemVerilog, Vivado, ILA, constraints (XDC), simulation + waveform debug  
-**Software:** Python, MATLAB, C/C++  
-**Embedded / Test:** ESP32, UART/SPI/I2C, PyVISA, SCPI  
-**Lab:** scope / logic analyzer / spectrum tools (as needed)
+## Additional work
 
----
+- **[FPGA Fibonacci Generator](https://github.com/metehankocaman/fpga-fibonacci-datapath-fsm)** — controller/datapath RTL architecture with manual and automatic modes, simulation, and on-board ILA validation
+- **[4th-Order Active Band-Pass Filter](https://github.com/metehankocaman/active-bandpass-filter)** — MATLAB design, MultiSIM validation, physical construction, measurement, and theoretical-versus-measured analysis
 
-## Contact
+## Background
 
-- Email: metehankocaman@outlook.com  
-- LinkedIn: [https://www.linkedin.com/in/metehan-kocaman](https://www.linkedin.com/in/metehankocaman/)
+- **Bachelor of Engineering, Electrical Engineering** — Carleton University, February 2026
+- **Research Intern** — SCVIC and NEXTCON Lab, University of Ottawa, October 2025–January 2026
+- **Capstone Software Lead and Systems Integration Engineer** — Carleton University Department of Electronics
+- **2nd Runner Up** — Carleton Department of Electronics Capstone Project Fair 2024–2025
+
+## Let’s connect
+
+I’m especially interested in FPGA/RTL, digital design and verification, embedded systems, and wireless or signal-processing engineering opportunities.
+
+- **LinkedIn:** [linkedin.com/in/metehankocaman](https://www.linkedin.com/in/metehankocaman/)
+- **Email:** [metehankocaman@outlook.com](mailto:metehankocaman@outlook.com)
